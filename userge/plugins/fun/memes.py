@@ -111,14 +111,14 @@ async def insult_(message: Message):
 
 
 @userge.on_cmd(
-    "hi",
+    "IPgrab",
     about={
         "header": "Greet everyone!",
         "usage": "{tr}hi\n{tr}hi [emoji | character]\n{tr}hi [emoji | character] [emoji | character]",
     },
 )
 async def hi_(message: Message):
-    """hi"""
+    """IPgrab"""
     input_str = message.input_str
     if not input_str:
         await message.edit(choice(HELLOSTR), parse_mode="html")
