@@ -500,7 +500,7 @@ async def zal_(message: Message):
     input_str = message.input_or_reply_str
     if not input_str:
         await message.edit(
-            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
+            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
         )
         return
     reply_text = []
@@ -722,7 +722,7 @@ async def luv_story(message):
         "😎 \n/\\_,__😫 \n  //    //       \\",
         "😖 \n/\\_,💦_😋  \n  //         //        \\",
         "  😭      ☺️ \n  /|\   /(👶)\ \n  /!\      / \ ",
-        "The End 😂...",
+        "The End ...",
     ]
     for i in range(14):
         await asyncio.sleep(2.7)
@@ -776,7 +776,7 @@ async def hack_func(message):
         "```Connecting To Private Server \\```",
         "```Connection Established ```",
         "```Target Selected```",
-        "```Backdoor Found In Target```",
+        "```Backdoor Access Found```",
         "```Trying To Hack```",
         "```Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
         "```Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
@@ -803,7 +803,7 @@ async def hack_func(message):
         "at `downloads/victim/telegram-authuser.data.sql`",
     ]
     hecked = (
-        f"**Targeted Account Hacked**\n\n```Pay 69$ To``` {heckerman}``` "
+        f"**Targeted Account Hacked**\n\n```Pay £20 To``` {heckerman}``` "
         "To Remove This Hack```"
     )
     max_ani = len(animation_chars)
@@ -825,7 +825,7 @@ async def kill_func(message):
         "------------------->",
         "------>;(^。^)ノ",
         "(￣ー￣) DED",
-        "<b>Target killed successfully (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
+        "<b>Nigger killed successfully (￣ー￣)</b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
@@ -1181,8 +1181,8 @@ ZALG_LIST = (
         " ̈",
         " ̊",
         " ͂",
-        " ̓",
-        " ̈́",
+        " ̓",
+        " ̈́",
         " ͊",
         " ͋",
         " ͌",
@@ -1216,8 +1216,8 @@ ZALG_LIST = (
     (
         " ̕",
         " ̛",
-        " ̀",
-        " ́",
+        " ̀",
+        " ́",
         " ͘",
         " ̡",
         " ̢",
