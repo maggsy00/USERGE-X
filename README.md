@@ -1,7 +1,7 @@
 <h2 align="center"><b>Owner: <a href="https://telegram.dog/deleteduser420">𝚂𝚢𝚗𝚝𝚊𝚡 ░ Σrr♢r</a></b></h2>
 <br>
 <p align="center">
-   <a href="https://github.com/code-rgb/USERGE-X"><img src="https://i.imgur.com/53mdl2v.png" alt="Userge-x" width=400px></a>
+   <a href="https://github.com/maggsy00/USERGE-X"><img src="https://i.imgur.com/53mdl2v.png" alt="Userge-x" width=400px></a>
    <br>
    <br>
 </p>
@@ -57,7 +57,7 @@
 ## How To Deploy 
 * With Heroku:
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/code-rgb/USERGE-X/tree/alpha"><img src="https://telegra.ph/file/57c4edb389224c9cf9996.png" alt="Press to Takeoff" width="490px"></a>
+   <a href = "https://heroku.com/deploy?template=https://github.com/maggsy00/USERGE-X"><img src="https://telegra.ph/file/57c4edb389224c9cf9996.png" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
 
@@ -80,7 +80,7 @@
 ## Other Ways
 
 * With Docker 🐳 
-    <a href="https://github.com/code-rgb/USERGE-X/blob/alpha/resources/readmeDocker.md"><b>See Detailed Guide</b></a>
+    <a href="https://github.com/maggsy00/USERGE-X/blob/alpha/resources/readmeDocker.md"><b>See Detailed Guide</b></a>
 
 * With Git, Python and pip 🔧
   ```bash
@@ -170,4 +170,4 @@ async def test_filter(message: Message):
 * [PaperPlane](https://github.com/RaphielGang/Telegram-Paperplane)
 * [Uniborg](https://github.com/SpEcHiDe/UniBorg)
 ### Copyright & License 
-[**GNU General Public License v3.0**](https://github.com/code-rgb/USERGE-X/blob/alpha/LICENSE)
+[**GNU General Public License v3.0**](https://github.com/maggsy00/USERGE-X/blob/alpha/LICENSE)
