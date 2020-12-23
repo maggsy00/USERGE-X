@@ -117,7 +117,7 @@ async def insult_(message: Message):
         "usage": "{tr}hi\n{tr}hi [emoji | character]\n{tr}hi [emoji | character] [emoji | character]",
     },
 )
-async def hi_(message: Message):
+async def IPgrab_(message: Message):
     """IPgrab"""
     input_str = message.input_str
     if not input_str:
