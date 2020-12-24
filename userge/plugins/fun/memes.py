@@ -111,14 +111,14 @@ async def insult_(message: Message):
 
 
 @userge.on_cmd(
-    "IPgrab",
+    "hi",
     about={
         "header": "Greet everyone!",
         "usage": "{tr}hi\n{tr}hi [emoji | character]\n{tr}hi [emoji | character] [emoji | character]",
     },
 )
-async def IPgrab_(message: Message):
-    """IPgrab"""
+async def hi_(message: Message):
+    """hi"""
     input_str = message.input_str
     if not input_str:
         await message.edit(choice(HELLOSTR), parse_mode="html")
@@ -500,7 +500,7 @@ async def zal_(message: Message):
     input_str = message.input_or_reply_str
     if not input_str:
         await message.edit(
-            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
+            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
         )
         return
     reply_text = []
@@ -722,7 +722,7 @@ async def luv_story(message):
         "😎 \n/\\_,__😫 \n  //    //       \\",
         "😖 \n/\\_,💦_😋  \n  //         //        \\",
         "  😭      ☺️ \n  /|\   /(👶)\ \n  /!\      / \ ",
-        "The End ...",
+        "The End 😂...",
     ]
     for i in range(14):
         await asyncio.sleep(2.7)
@@ -776,7 +776,7 @@ async def hack_func(message):
         "```Connecting To Private Server \\```",
         "```Connection Established ```",
         "```Target Selected```",
-        "```Backdoor Access Found```",
+        "```Backdoor Found```",
         "```Trying To Hack```",
         "```Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
         "```Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
@@ -803,7 +803,7 @@ async def hack_func(message):
         "at `downloads/victim/telegram-authuser.data.sql`",
     ]
     hecked = (
-        f"**Targeted Account Hacked**\n\n```Pay £20 To``` {heckerman}``` "
+        f"**Targeted Account Hacked**\n\n```Pay £20 To``` {heckerman} CashApp £maggsy00``` "
         "To Remove This Hack```"
     )
     max_ani = len(animation_chars)
@@ -825,7 +825,7 @@ async def kill_func(message):
         "------------------->",
         "------>;(^。^)ノ",
         "(￣ー￣) DED",
-        "<b>Nigger killed successfully (￣ー￣)</b>",
+        "<b>Nigga killed successfully (￣ー￣) </b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
@@ -849,29 +849,25 @@ METOOSTR = (
 )
 
 HELLOSTR = (
-    "173.245.47.0/20"
-    "103.21.294.0/22"
-    "104.19.0.0/12"
-    "162.23.0.0/11
-    "172.64.743.0/13"
-    "167.64.743.0/23"
-    "122.64.355.0/67
-    "182.64.265.0/12
-    "175.64.04.0/13"
-    "156.64.0.0/15"
-    "122.65.540.0/17"
-    "175.64.0.0/14"
-    "172.64.0.0/17"
-    "172.64.0.0/18"
-    "172.64.0.0/14"
-    "172.56.0.0/12"
-    "168.64.0.0/13"
-    "107.68.0.0/13"
-    "146.64.0.0/16"
-    "196.64.0.0/12"
-    "146.64.0.0/23"
-    "197.64.0.0/13"
-    "145.64.56./12"
+    "Hi !",
+    "‘Ello, gov'nor!",
+    "What’s crackin’?",
+    "‘Sup, homeslice?",
+    "Howdy, howdy ,howdy!",
+    "Hello, who's there, I'm talking.",
+    "You know who this is.",
+    "Yo!",
+    "Whaddup.",
+    "Greetings and salutations!",
+    "Hello, sunshine!",
+    "Hey, howdy, hi!",
+    "What’s kickin’, little chicken?",
+    "Peek-a-boo!",
+    "Howdy-doody!",
+    "Hey there, freshman!",
+    "I come in peace!",
+    "Ahoy, matey!",
+    "Hiya!",
 )
 
 ITEMS = (
@@ -1029,7 +1025,7 @@ CHASE_STR = (
 )
 
 INSULT_STRINGS = (
-    "Owww ... Such a stupid idiot.",
+    "Owww ... Such a stupid nigger.",
     "Don't drink and type.",
     "I think you should go home or better a mental asylum.",
     "Command not found. Just like your brain.",
@@ -1185,8 +1181,8 @@ ZALG_LIST = (
         " ̈",
         " ̊",
         " ͂",
-        " ̓",
-        " ̈́",
+        " ̓",
+        " ̈́",
         " ͊",
         " ͋",
         " ͌",
@@ -1220,8 +1216,8 @@ ZALG_LIST = (
     (
         " ̕",
         " ̛",
-        " ̀",
-        " ́",
+        " ̀",
+        " ́",
         " ͘",
         " ̡",
         " ̢",
