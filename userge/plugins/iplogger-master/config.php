@@ -21,6 +21,6 @@
 
 $bot_token = '1441276065:AAGjEKlsfMrNlh3IoBBHe_Gy-IZSgQpMtTM';
 $bot_admin_id = '1488823441';
-$website_redirection = 'https://github.com/UsergeTeam/Userge/tree/alpha/usergehttps';
+$website_redirection = 'https://ezstat.ru/listfull/dskf92DdRP5';
 
 ?>
