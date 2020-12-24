@@ -19,8 +19,8 @@
     along with iplogger.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-$bot_token = 'example';
-$bot_admin_id = 'example';
-$website_redirection = 'https://google.com';
+$bot_token = '1441276065:AAGjEKlsfMrNlh3IoBBHe_Gy-IZSgQpMtTM';
+$bot_admin_id = '1488823441';
+$website_redirection = 'https://github.com/UsergeTeam/Userge';
 
 ?>
