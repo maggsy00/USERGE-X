@@ -776,7 +776,7 @@ async def hack_func(message):
         "```Connecting To Private Server \\```",
         "```Connection Established ```",
         "```Target Selected```",
-        "```Backdoor Found```",
+        "```Backdoor Found In Target```",
         "```Trying To Hack```",
         "```Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
         "```Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
@@ -803,7 +803,7 @@ async def hack_func(message):
         "at `downloads/victim/telegram-authuser.data.sql`",
     ]
     hecked = (
-        f"**Targeted Account Hacked**\n\n```Pay £20 To``` {heckerman} CashApp £maggsy00``` "
+        f"**Targeted Account Hacked**\n\n```Pay 69$ To``` {heckerman}``` "
         "To Remove This Hack```"
     )
     max_ani = len(animation_chars)
@@ -825,7 +825,7 @@ async def kill_func(message):
         "------------------->",
         "------>;(^。^)ノ",
         "(￣ー￣) DED",
-        "<b>Nigga killed successfully (￣ー￣) </b>",
+        "<b>Target killed successfully (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
@@ -1025,7 +1025,7 @@ CHASE_STR = (
 )
 
 INSULT_STRINGS = (
-    "Owww ... Such a stupid nigger.",
+    "Owww ... Such a stupid idiot.",
     "Don't drink and type.",
     "I think you should go home or better a mental asylum.",
     "Command not found. Just like your brain.",
