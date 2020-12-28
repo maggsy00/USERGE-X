@@ -1,39 +1,15 @@
-# Copyright (C) 2020 by UsergeTeam@Github, < https://github.com/UsergeTeam >.
-#
-# This file is part of < https://github.com/UsergeTeam/Userge > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/uaudith/Userge/blob/master/LICENSE >
-#
-# All rights reserved.
-
-import asyncio
+from telethon import events
 from datetime import datetime
+from uniborg.util import admin_cmd, edit_or_reply
 
-from userge import Message, userge
 
-
-@userge.on_cmd(
-    "ping",
-    about={
-        "header": "check how long it takes to ping your userbot",
-        "flags": {"-a": "average ping"},
-    },
-    group=-1,
-)
-async def pingme(message: Message):
+@borg.on(admin_cmd(pattern="ping", allow_sudo=True))
+async def _(event):
+    if event.fwd_from:
+        return
+    ed = await edit_or_reply(event, event.from_id, "...")
     start = datetime.now()
-    if "-a" in message.flags:
-        await message.edit("`!....`")
-        await asyncio.sleep(0.3)
-        await message.edit("`..!..`")
-        await asyncio.sleep(0.3)
-        await message.edit("`....!`")
-        end = datetime.now()
-        t_m_s = (end - start).microseconds / 1000
-        m_s = round((t_m_s - 0.6) / 3, 3)
-        await message.edit(f"**🏓 Average Pong!**\n`{m_s} ms`")
-    else:
-        await message.edit("`Pong!`")
-        end = datetime.now()
-        m_s = (end - start).microseconds / 1000
-        await message.edit(f"**🏓 Pong!**\n`{m_s} ms`")
+    await ed.edit("Pong!")
+    end = datetime.now()
+    ms = (end - start).microseconds / 1000
+    await ed.edit("**Pong!**\n`{}` __ms__".format(ms))

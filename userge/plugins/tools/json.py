@@ -1,65 +1,33 @@
-"""Json / Yaml"""
-
-# by - @DeletedUser420
-
-import json
-import re
-
-import yaml
-
-from userge import Message, userge
+"""Get Detailed info about any message
+Syntax: .json"""
+from telethon import events
+import io
+from uniborg.util import admin_cmd
 
 
-@userge.on_cmd(
-    "json",
-    about={
-        "header": "message object to json",
-        "usage": "reply {tr}json to any message",
-    },
-)
-async def jsonify(message: Message):
-    """Json-ify"""
-    if message.reply_to_message:
-        msg = str(message.reply_to_message)
+@borg.on(admin_cmd(pattern="json"))
+async def _(event):
+    if event.fwd_from:
+        return
+    the_real_message = None
+    reply_to_id = None
+    if event.reply_to_msg_id:
+        previous_message = await event.get_reply_message()
+        the_real_message = previous_message.stringify()
+        reply_to_id = event.reply_to_msg_id
     else:
-        msg = str(message)
-    await message.edit_or_send_as_file(
-        text=msg, filename="json.txt", caption="Too Large"
-    )
-
-
-@userge.on_cmd(
-    "yaml",
-    about={
-        "header": "message object to yaml",
-        "usage": "reply {tr}yaml to any message",
-    },
-)
-async def yamlify(message: Message):
-    """yaml-ify"""
-    if message.reply_to_message:
-        msg = str(message.reply_to_message)
+        the_real_message = event.stringify()
+        reply_to_id = event.message.id
+    if len(the_real_message) > Config.MAX_MESSAGE_SIZE_LIMIT:
+        with io.BytesIO(str.encode(the_real_message)) as out_file:
+            out_file.name = "json.text"
+            await borg.send_file(
+                event.chat_id,
+                out_file,
+                force_document=True,
+                allow_cache=False,
+                reply_to=reply_to_id
+            )
+            await event.delete()
     else:
-        msg = str(message)
-    json_file = json.loads(msg)
-    yaml_ify = yaml.dump(convert(json_file), allow_unicode=True)
-    regex = r"(\s+|)(?:- _:|_:)[\s]"
-    result = re.sub(regex, " ", yaml_ify, re.MULTILINE)
-    if result:
-        await message.edit_or_send_as_file(
-            text=f"```{result[1:]}```", filename="yaml.txt", caption="Too Large"
-        )
-
-
-def convert(obj):
-    if isinstance(obj, bool):
-        return bool_emoji(obj)
-    if isinstance(obj, (list, tuple)):
-        return [convert(item) for item in obj]
-    if isinstance(obj, dict):
-        return {convert(key): convert(value) for key, value in obj.items()}
-    return obj
-
-
-def bool_emoji(choice: bool) -> str:
-    return "✔" if choice else "✖"
+        await event.edit("`{}`".format(the_real_message))
